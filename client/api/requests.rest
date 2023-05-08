@@ -1,0 +1,35 @@
+GET http://localhost:3001/inventory
+
+###
+
+POST http://localhost:3001/inventory/new
+Content-Type: application/json
+
+{
+    "item": "rice",
+    "quantity": 3,
+    "units": "lbs",
+    "location": "Pantry",
+    "expires": "2023-07-10",    
+}
+
+###
+DELETE http://localhost:3001/inventory/delete/64551f5d9bdaf12b353ea4a4
+
+###
+PUT http://localhost:3001/inventory/complete/6453cf220d5416c64416bccd
+
+###
+GET http://localhost:3001/shoppingList
+
+###
+POST http://localhost:3001/shoppingList/new
+Content-Type: application/json
+
+{
+    "item": "rice",
+    "quantity": 3,
+    "units": "lbs",
+    "location": "Pantry",
+    "expires": "2023-07-10",    
+}
