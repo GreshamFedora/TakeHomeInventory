@@ -16,7 +16,7 @@ const ReadOnlyRow = ({ item, handleEditClick, deleteInventoryItem, addToList, is
             <button className="delete-item actionButtons" onClick={(e) => deleteInventoryItem(e, item._id)}>Delete</button>
         </td>
         <td>
-            <button className="delete-item actionButtons" onClick={(e) => addToList(e, item._id)}>{alreadyAdded === true ? "Already added" : isAdded === true ? "Added to list" : "Add to list"}</button>
+            <button className="delete-item actionButtons" onClick={(e) => addToList(e, item._id)}>{/*alreadyAdded ? "Already added" : isAdded ? "Added to list" :*/ "Add to list"}</button>
         </td>
     </tr>
   )
